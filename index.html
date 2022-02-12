@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Site Resume</title>
+    </head>
+    <body>
+        <header>
+            <h1 align="center">Резюме</h1>
+        </header>
+        <article>
+            <!-- Создание разметки страницы с помощью тега table  -->
+            <!-- В данное время вообще не используется по причине широкого использования  css  -->
+            <table cellspacing="15px">
+                <tr>
+                    <td>
+                        <img src="https://ejobs.com.bd/dashboard/images/profile_image/default.png" alt="this is my picture" width="150px">
+                    </td>
+                    <td>
+                        <!-- Htnl comments hotkey - Ctrl + / -->
+                        <h4 align="justify">Василий Шилов</h4>
+                        <br>
+                        <p><em>Я <strong>инженер-программист</strong></em></p>
+                        <!-- Тег em - для курсива -->
+                        <!-- Тег stong - для жирного текста -->
+                        <p>Я люблю заниматься спортом, путешествовать и прогаммировать.</p>
+                    </td>
+                </tr>
+            </table>
+            
+            
+            <hr>
+            <h3>Мои социальные сети</h3>
+            <ul type="square" >
+            <!-- Данные атрибуты не используются, так как все свой ства описываются в css-файле -->
+                <li><a href="https://vk.com" target="_blank">Vk</a></li>
+                <li><a href="https://web.telegram.org/z/" target="_blank">Telegram</a></li>
+                <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+            <!-- Атрибут target с параметром _blank позволяет открыть ссылку в новой вкладке браузера     -->
+            </ul>
+            <h3>Мои хобби</h3>
+            <!-- Данные атрибуты не используются, так как все свой ства описываются в css-файле -->
+            <ol start="10" type="A" reversed> 
+                <li>Программирование</li>
+                <li>Спорт: футбол, теннис и стрельба из лука</li>
+                <li>Путешествие</li>
+            </ol>
+            <h3>Опыт работы</h3>
+            <table border="1" >
+                <tr>
+                    <th>Компания</th>
+                    <th>Должность</th>
+                    <th>Год</th>
+                </tr>
+                <tr>
+                    <td>US Tech</td>
+                    <td>Software ingenier</td>
+                    <td>2014-2016</td>
+                </tr>
+                <tr><td>Microsoft</td>
+                    <td>Team lead</td>
+                    <td>2016-2021</td>
+                </tr>
+            </table>
+
+        </article>
+        <footer>
+            <p>Ссылка на видео:</p>
+            <a href="youtubelink.html" target="_blank">Youtube-канал</a>
+            <hr>
+            <h3>Связаться со мной</h3>
+            <form action="action.html" target="_blank">
+                <label for="nametext">Ваше имя:</label>
+                <input type="text" id="nametext" placeholder="Введите Ваше имя" max="60">
+                <br> <br>
+                <label for="emailtext">Ваш email:</label>
+                <input type="email" id="emailtext" placeholder="Введите адрес электронной почты" max="60">
+                <br>
+                <br>
+                <label for="textmessage">Ваше сообщение:</label> <br>
+                <textarea name="taname" id="textmessage" cols="30" rows="6"></textarea>
+
+                <input type="submit" value="Связаться">
+            </form>
+        </footer>
+    </body>
+</html>
